@@ -6,7 +6,7 @@ export const site = {
   avatar: '/tom.jpg',
   socials: {
     linkedin: 'https://linkedin.com/in/thomascswain',
-    github: 'https://github.com/',
+    github: 'https://github.com/iamtomswain',
   },
 } as const;
 

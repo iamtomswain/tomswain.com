@@ -34,6 +34,10 @@ a {
 
 .wrap {
   @include m.wrap;
+
+  @include m.below(t.$bp-sm) {
+    padding: 0 1.25rem;
+  }
 }
 
 .eyebrow {
