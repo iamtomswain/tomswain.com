@@ -1,0 +1,5 @@
+// Single entrypoint for the entire design system.
+// Partials are organized by concern, not by component.
+@use 'tokens';
+@use 'base';
+@use 'components';

@@ -1,0 +1,39 @@
+@use 'tokens' as t;
+
+@mixin below($max) {
+  @media (max-width: $max) {
+    @content;
+  }
+}
+
+@mixin wrap {
+  max-width: var(--wrap-max);
+  margin: 0 auto;
+  padding: 0 var(--wrap-pad);
+}
+
+@mixin section {
+  padding: var(--section-pad-y) var(--section-pad-x);
+}
+
+@mixin display-type {
+  font-family: var(--font-display);
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  line-height: 0.92;
+}
+
+@mixin eyebrow {
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--ink-muted);
+  display: inline-block;
+}
+
+@mixin card-surface {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-card);
+}
