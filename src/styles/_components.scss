@@ -110,6 +110,7 @@
   }
 
   @include m.below(t.$bp-sm) {
+    min-height: 46vh;
     padding-top: 7rem;
     padding-bottom: 3rem;
   }
@@ -238,7 +239,7 @@
     aspect-ratio: 16 / 10;
     position: relative;
     background: var(--surface);
-    padding-top: 2rem;
+    padding: var(--space-lg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -291,6 +292,17 @@
   }
 
   @include m.below(t.$bp-sm) {
+    border-radius: var(--radius-2xl);
+
+    &__visual {
+      aspect-ratio: 1458 / 2500;
+      padding: 0 var(--space-md) var(--space-md);
+    }
+
+    &__image {
+      border-radius: var(--radius-xl);
+    }
+
     &__meta {
       padding: 1.25rem;
       flex-direction: column;

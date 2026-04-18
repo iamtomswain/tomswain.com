@@ -3,6 +3,7 @@ export type Project = {
   tagline: string;
   href: string;
   image: string;
+  imageMobile: string;
   imageAlt: string;
 };
 
@@ -12,6 +13,7 @@ export const projects: Project[] = [
     tagline: 'Brand governance SaaS',
     href: 'https://founderlock.ai',
     image: '/portfolio-founderlock.png',
+    imageMobile: '/portfolio-founderlock-mobile.png',
     imageAlt: 'FounderLock product screenshot',
   },
   {
@@ -19,6 +21,7 @@ export const projects: Project[] = [
     tagline: 'AI-orchestrated engineering',
     href: 'https://strictmode.ai',
     image: '/portfolio-strictmode.png',
+    imageMobile: '/portfolio-strictmode-mobile.png',
     imageAlt: 'Strict Mode product screenshot',
   },
 ];
